@@ -1,17 +1,14 @@
 <?php
 /**
- *
- * Knowledge base. An extension for the phpBB Forum Software package.
- * French translation by Galixte (http://www.galixte.com)
- *
- * @copyright (c) 2017 Sheer <https://phpbbguru.net>
- * @license GNU General Public License, version 2 (GPL-2.0)
- *
- */
+*
+* knowledgebase [French]
+*
+* @package phpBB Extension - Knowledge base
+* @copyright (c) 2013 phpBB Group
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*
+*/
 
-/**
- * DO NOT CHANGE
- */
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -22,23 +19,9 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-//
-// Some characters you may want to copy&paste:
-// ’ « » “ ” …
-//
-
 $lang = array_merge($lang, array(
+	'ALFABET'								=> 'A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-S-T-U-V-W-X-Y-Z',
+	'ALFABET_NAV'							=> '<strong>Navigation par ordre alphabétique</strong>: ',
 	'ADD_ARTICLE'							=> 'Nouvel article',
 	'APPROVE'								=> 'Confirmer l’approbation de l’article ',
 	'ARTICLE'								=> 'Article',
@@ -104,6 +87,7 @@ $lang = array_merge($lang, array(
 	'NO_TITLE'								=> 'Aucun titre n’a été saisi pour cet article.',
 	'PRINT'									=> 'Imprimer',
 	'READ_FULL'								=> 'Lire l’article complet',
+	'RESET_FILTER'							=> 'Réinitialiser le filtre',
 	'RETURN_ARTICLE'						=> '%sRetourner à l’article%s',
 	'RETURN_CAT'							=> '%sRetourner à la catégorie%s',
 	'RETURN_LIBRARY'						=> '%sRetourner à la base de connaissance%s',
@@ -136,3 +120,4 @@ $lang = array_merge($lang, array(
 	'TOTAL_ITEMS'							=> 'Articles : <strong>%d</strong>',
 	'WARNING_DEFAULT_CONFIG'				=> 'Les options par défaut de la configuration de la base de connaissances ont été définis, il peut être intéressant de les ajuster.<br />Se rendre sur la page « <strong>Paramètres</strong> » pour modifier les options.',
 ));
+
