@@ -1,16 +1,16 @@
 <?php
 /**
- *
- * Knowledge base. An extension for the phpBB Forum Software package.
- * French translation by Galixte (http://www.galixte.com)
- *
- * @copyright (c) 2017 Sheer <https://phpbbguru.net>
- * @license GNU General Public License, version 2 (GPL-2.0)
- *
- */
+*
+* knowledgebase [French]
+*
+* @package phpBB Extension - Knowledge base
+* @copyright (c) 2013 phpBB Group
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*
+*/
 
 /**
- * DO NOT CHANGE
+ * @ignore
  */
 if (!defined('IN_PHPBB'))
 {
@@ -33,10 +33,6 @@ if (empty($lang) || !is_array($lang))
 // You do not need this where single placeholders are used, e.g. 'Message %d' is fine
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-//
-// Some characters you may want to copy&paste:
-// ’ « » “ ” …
-//
 
 $lang = array_merge($lang, array(
 	'ACP_KNOWLEDGE_BASE_CONFIGURE'					=> 'Paramètres',
@@ -56,6 +52,7 @@ $lang = array_merge($lang, array(
 	'ACP_LIBRARY_ATTACHMENTS_LOST_FILES_EXPLAIN'	=> 'Depuis cette page il est possible de trouver les fichiers perdus sur le serveur. Si des fichiers sont absents du serveur leurs entrées correspondantes dans les articles seront supprimées.',
 	'ADD_CATEGORY'									=> 'Créer une catégorie',
 	'ADD_CATEGORY_EXPLAIN'							=> 'Permet de créer une nouvelle catégorie.',
+	'ALFABET'										=> 'navigation alphabétique',
 	'ALL_CATS'										=> 'Toutes les catégories',
 	'ANOUNCE'										=> 'Annoncer les nouveaux d’articles sur le forum',
 	'ANOUNCE_EXPLAIN'								=> 'Permet de créer un sujet pour commenter l’article, celui-ci contient une brève description ainsi qu’un lien vers l’article nouvellement créé.<br />Sélectionner un forum dans lequel seront publiés les sujets annonçant les nouveaux articles, depuis la liste de l’option suivante (le menu déroulant s’affiche une fois cette option activée).',
@@ -82,6 +79,7 @@ $lang = array_merge($lang, array(
 	'EDIT_DATE'										=> 'Modifié',
 	'EXTENSION_GROUP_EXPLAIN'						=> 'Depuis cette page il est possible de gérer les extensions des fichiers joints autorisées. À gauche les extensions actives et à droite les extensions disponibles (inactives). Pour désactiver une extension, utiliser le menu déroulant sur la gauche en veillant à ne garder que les extensions actives sélectionnées. Utiliser la combinaison de la touche CTRL et du clic gauche pour sélectionner/désélectionner plus d’une extension. Pour ajouter de nouvelles extensions, il est nécessaire de se rendre sur la page de gestion des extensions dans l’onglet « MESSAGES », page « Gérer les extensions des fichiers joints ».',
 	'FILES_DELETED_SUCCESS'							=> 'Les fichiers joints ont été supprimés avec succès !',
+	'FORCIBLY'										=> 'énergique',
 	'KB_CONFIG_EXPLAIN'								=> 'Depuis cette page il est possible de modifier les options générales.',
 	'KB_CONFIG_UPDATED'								=> 'Paramètres sauvegardés avec succès !',
 	'KB_FORUM_EXPLAIN'								=> 'Permet de sélectionner a forum dans lequel seront publiés les annonces des nouveaux articles publiés dans la base de connaissances.',
@@ -110,8 +108,11 @@ $lang = array_merge($lang, array(
 	'POST_ROW_ARTICLE_INFO'							=> ' ayant l’ID %1$d…',
 	'RESYNC_ATTACHMENTS_FINISHED'					=> 'Les fichiers joints ont été synchronisés avec succès (les entrées correspondantes dans la base de données ont été vérifiées)',
 	'RESYNC_ATTACHMENTS_PROGRESS'					=> 'La vérification des entrées dans la base de données est en cours ! Merci de ne pas interrompre le processus !',
+	'SELECTABLE'									=> 'sélectionnable',
 	'SELECT_CAT'									=> 'Sélectionner une catégorie',
 	'SELECT_CATEGORY'								=> 'Sélectionner une catégorie',
+	'SORT_TYPE'										=> 'Ordre de tri',
+	'SORT_TYPE_EXPLAIN'								=> '',
 	'SYNC_OK'										=> 'Catégorie synchronisée avec succès !',
 	'THUMBNAIL_EXPLAIN'								=> 'Les dimensions des miniatures sont définies dans la page par défaut de phpBB dans le PCA (&laquo; Paramètres des fichiers joints &raquo;).',
 	'UPLOAD_DENIED_ARTICLE'							=> 'L’article ayant l’ID n’existe pas.',
@@ -236,3 +237,4 @@ $lang = array_merge($lang, array(
 	'KB_TRACE_USER_YES_TOTAL_NO_LOCAL'		=> 'The user’s permission for this category is set to <strong>YES</strong> which becomes the total value because it was set to <strong>NO</strong>.',
 	'KB_TRACE_USER_YES_TOTAL_YES_LOCAL'		=> 'The user’s permission for this category is set to <strong>YES</strong> and the total value is set to <strong>YES</strong>, so nothing is changed.',
 ));
+
