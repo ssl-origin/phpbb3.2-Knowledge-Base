@@ -327,6 +327,7 @@ class posting
 					$sql_data['author']					= $article_author;
 					$sql_data['views']					= $views;
 					$sql_data['article_date']			= $article_date;
+					$sql_data['approved ']				= 1;
 					$sql_data['edit_date']				= time();
 					$redirect = $this->helper->route('sheer_knowledgebase_article', array('k' => $art_id));
 
@@ -421,8 +422,13 @@ class posting
 						$redirect = $this->helper->route('sheer_knowledgebase_category', array('id' => $cat_id));
 
 						// Add notification
-						$sql_data['article_id'] = $new;
-						$this->notification_helper->add_notification($sql_data, 'sheer.knowledgebase.notification.type.need_approval');
+						$data = array(
+								'id'					=> $new,
+								'article_category_id'	=> $cat_id,
+								'author_id'				=> $this->user->data['user_id'],
+								'title'					=> $article_title,
+							);
+							$this->notification_helper->add_notification($data, 'sheer.knowledgebase.notification.type.need_approval');
 					}
 
 					$this->phpbb_cache->destroy('sql', $this->categories_table);
